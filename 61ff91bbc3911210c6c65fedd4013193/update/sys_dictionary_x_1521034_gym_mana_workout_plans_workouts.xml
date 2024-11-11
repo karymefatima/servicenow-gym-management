@@ -10,18 +10,18 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice/>
+        <choice>3</choice>
         <choice_field/>
         <choice_table/>
         <column_label>Workouts</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>Push Ups</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
         <dependent_on_field/>
-        <display>true</display>
+        <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
         <dynamic_default_value/>
@@ -33,14 +33,14 @@
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="">glide_list</internal_type>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>4000</max_length>
         <name>x_1521034_gym_mana_workout_plans</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference/>
+        <reference display_value="" name="x_1521034_gym_mana_workout">x_1521034_gym_mana_workout</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -58,7 +58,7 @@
         <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
         <sys_update_name>sys_dictionary_x_1521034_gym_mana_workout_plans_workouts</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-10-24 03:48:38</sys_updated_on>
+        <sys_updated_on>2024-11-11 14:38:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
