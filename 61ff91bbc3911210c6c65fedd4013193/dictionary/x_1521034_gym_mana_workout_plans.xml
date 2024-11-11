@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="5bdf69b7831112106a3bc7b6feaad3f0" label="Workout Plans" max_length="40" name="x_1521034_gym_mana_workout_plans" type="collection">
         <element label="Short Description" max_length="40" name="short_description" type="string"/>
-        <element label="Number" max_length="40" name="number" type="string"/>
+        <element default="javascript:getNextObjNumber();" display="true" dynamic_default_value="8acb83a85f220100a9ad2572f2b47741" label="Number" max_length="40" name="number" read_only="true" type="string" use_dynamic_default="true"/>
         <element label="Estimated Completion" max_length="40" name="estimated_completion" type="glide_time"/>
-        <element choice="3" default="Push Ups" display="true" label="Workouts" mandatory="true" max_length="4000" name="workouts" type="glide_list">
+        <element choice="3" default="Push Ups" label="Workouts" mandatory="true" max_length="4000" name="workouts" reference="x_1521034_gym_mana_workout" type="glide_list">
             <choice>
                 <element inactive_on_update="false" label="Shoulder Press" value="Shoulder Press"/>
                 <element inactive_on_update="false" label="Lateral Raise" value="Lateral Raise"/>
