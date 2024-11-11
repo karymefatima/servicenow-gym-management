@@ -8,7 +8,7 @@
         <configuration_access>false</configuration_access>
         <create_access>true</create_access>
         <create_access_controls>true</create_access_controls>
-        <delete_access>false</delete_access>
+        <delete_access>true</delete_access>
         <is_extendable>false</is_extendable>
         <label>Workout Plans</label>
         <live_feed_enabled>false</live_feed_enabled>
@@ -22,6 +22,7 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-10-24 03:48:39</sys_created_on>
         <sys_id>5bdf69b7831112106a3bc7b6feaad3f0</sys_id>
+
         <sys_mod_count>2</sys_mod_count>
         <sys_name>Workout Plans</sys_name>
         <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
