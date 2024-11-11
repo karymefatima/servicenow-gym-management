@@ -3,7 +3,16 @@
         <element label="Short Description" max_length="40" name="short_description" type="string"/>
         <element label="Number" max_length="40" name="number" type="string"/>
         <element label="Estimated Completion" max_length="40" name="estimated_completion" type="glide_time"/>
-        <element display="true" label="Workouts" max_length="4000" name="workouts" type="glide_list"/>
-        <element label="Trainer" max_length="40" name="trainer" reference="sys_user" type="string"/>
+        <element choice="3" default="Push Ups" display="true" label="Workouts" mandatory="true" max_length="4000" name="workouts" type="glide_list">
+            <choice>
+                <element inactive_on_update="false" label="Shoulder Press" value="Shoulder Press"/>
+                <element inactive_on_update="false" label="Lateral Raise" value="Lateral Raise"/>
+                <element inactive_on_update="false" label="Rows" value="Rows"/>
+                <element inactive_on_update="false" label="Weighted Squats" value="Weighted Squats"/>
+                <element inactive_on_update="false" label="Jumps" value="Jumps"/>
+                <element inactive_on_update="false" label="Push Ups" value="Push Ups"/>
+            </choice>
+        </element>
+        <element label="Trainer" max_length="40" name="trainer" reference="sys_user" type="reference"/>
     </element>
 </database>
