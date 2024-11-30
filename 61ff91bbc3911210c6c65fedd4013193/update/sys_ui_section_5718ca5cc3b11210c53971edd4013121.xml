@@ -4,13 +4,13 @@
             <element>name</element>
             <position>0</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-11-07 05:01:53</sys_created_on>
-            <sys_id>6b18cadcc3b11210c53971edd4013152</sys_id>
+            <sys_created_on>2024-11-27 14:25:18</sys_created_on>
+            <sys_id>abd80ffec3021210c6c65fedd40131cc</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1521034_gym_mana_workout" sys_domain="global" view="Default view">5718ca5cc3b11210c53971edd4013121</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-11-07 05:01:53</sys_updated_on>
+            <sys_updated_on>2024-11-27 14:25:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>description</element>
             <position>1</position>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-11-07 05:01:53</sys_created_on>
-            <sys_id>a718cadcc3b11210c53971edd4013153</sys_id>
+            <sys_created_on>2024-11-27 14:25:18</sys_created_on>
+            <sys_id>67d80ffec3021210c6c65fedd40131cd</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1521034_gym_mana_workout" sys_domain="global" view="Default view">5718ca5cc3b11210c53971edd4013121</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-11-07 05:01:53</sys_updated_on>
+            <sys_updated_on>2024-11-27 14:25:18</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -35,7 +35,7 @@
             <roles/>
             <sys_class_name>sys_ui_section</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-11-07 05:01:53</sys_created_on>
+            <sys_created_on>2024-10-30 14:28:19</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>5718ca5cc3b11210c53971edd4013121</sys_id>
@@ -47,7 +47,7 @@
             <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
             <sys_update_name>sys_ui_section_5718ca5cc3b11210c53971edd4013121</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-11-07 05:01:53</sys_updated_on>
+            <sys_updated_on>2024-10-30 14:28:19</sys_updated_on>
             <sys_user/>
             <title>true</title>
             <view display_value="Default view" name="NULL">Default view</view>
