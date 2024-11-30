@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Trainer Field Restriction</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    // Check if the current user is a trainer but not a manager
+    var userRoles = g_user.hasRole('x_snc_gym_management.trainer');
+    var managerRoles = g_user.hasRole('x_snc_gym_management.manager');
+    
+    if (userRoles && !managerRoles) {
+        // Disable all fields except Trainer
+        var form = g_form;
+        form.setReadOnly('number', true);
+        form.setReadOnly('short_description', true);
+        form.setReadOnly('workouts', true);
+        form.setReadOnly('estimated_completion', true);
+        
+        // Ensure Trainer field is editable
+        form.setReadOnly('trainer', false);
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-30 03:59:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e4061c7f830212109e12ef80ceaad359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Trainer Field Restriction</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
+        <sys_update_name>sys_script_client_e4061c7f830212109e12ef80ceaad359</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-30 03:59:48</sys_updated_on>
+        <table>x_1521034_gym_mana_workout_plans</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
