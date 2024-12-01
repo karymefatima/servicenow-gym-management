@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-01 16:40:23</sys_created_on>
+        <sys_id>880e8c9883d692109e12ef80ceaad3b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1521034_gym_mana_workout_plans.trainer.x_1521034_gym_mana.manager</sys_name>
+        <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
+        <sys_security_acl display_value="x_1521034_gym_mana_workout_plans">2c2ce2f3830e12109e12ef80ceaad34d</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_880e8c9883d692109e12ef80ceaad3b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-01 16:40:23</sys_updated_on>
+        <sys_user_role display_value="x_1521034_gym_mana.manager" name="x_1521034_gym_mana.manager">0d10e1bbc3911210c6c65fedd40131f2</sys_user_role>
+    </sys_security_acl_role>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</application>
+        <file_path/>
+        <instance_id>7496d64d1b8e829039a54089bd4bcb0d</instance_id>
+        <instance_name>dev264192</instance_name>
+        <name>sys_security_acl_role_880e8c9883d692109e12ef80ceaad3b9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-01 16:40:23</sys_created_on>
+        <sys_id>880e8c9883d692109e12ef80ceaad3b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1521034_gym_mana_workout_plans.trainer.x_1521034_gym_mana.manager</sys_name>
+        <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
+        <sys_security_acl display_value="x_1521034_gym_mana_workout_plans">2c2ce2f3830e12109e12ef80ceaad34d</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_880e8c9883d692109e12ef80ceaad3b9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-01 16:40:23</sys_updated_on>
+        <sys_user_role display_value="x_1521034_gym_mana.manager" name="x_1521034_gym_mana.manager">0d10e1bbc3911210c6c65fedd40131f2</sys_user_role>
+    </sys_security_acl_role>
+</record_update>]]></payload>
+        <payload_hash>516480705</payload_hash>
+        <record_name>x_1521034_gym_mana_workout_plans.trainer.x_1521034_gym_mana.manager</record_name>
+        <reverted_from/>
+        <source>07cd1410835a92109e12ef80ceaad35c</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-01 17:48:49</sys_created_on>
+        <sys_id>3fcd5410835a92109e12ef80ceaad335</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1938356e3960000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-01 17:48:49</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>3bcd5410745a9210023a2b9355037935</update_guid>
+        <update_guid_history>3bcd5410745a9210023a2b9355037935:0,143a98d8441a92109066ec9f401aba4b:-338975947,63321050931a9210307e9a94d30fe0c3:0,8ed050dc38d6921078378301d7335ced:871435641,012e04d8bed69210034bc20cc6c0f29f:280988446</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1521034_gym_mana_workout_plans.trainer.x_1521034_gym_mana.manager">a83fc1d8831e92109e12ef80ceaad3a5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-01 21:24:36</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>0eb69408c9f145f08af3c286d7156e90</sys_id>
+        <sys_metadata>880e8c9883d692109e12ef80ceaad3b9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1521034_gym_mana_workout_plans.trainer.x_1521034_gym_mana.manager</sys_name>
+        <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
+        <sys_parent display_value="x_1521034_gym_mana_workout_plans.short_description">2c2ce2f3830e12109e12ef80ceaad34d</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
+        <sys_scope_delete display_value="">862e8ebd8a6741908a8614714c804240</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_880e8c9883d692109e12ef80ceaad3b9</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_880e8c9883d692109e12ef80ceaad3b9">3fcd5410835a92109e12ef80ceaad335</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-01 21:24:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

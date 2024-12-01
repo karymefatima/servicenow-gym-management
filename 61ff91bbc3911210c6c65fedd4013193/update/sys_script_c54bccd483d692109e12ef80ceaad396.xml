@@ -27,16 +27,18 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeSecurity(record, operation, role) {
-    // Check if the user has the trainer role but not the manager role
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
     if (gs.hasRole('x_1521034_gym_mana.trainer') && !gs.hasRole('x_1521034_gym_mana.manager')) {
-        // Set specific fields as read-only for trainers
-        record.workouts.readonly = true;
-        record.short_description.readonly = true;
-        record.estimated_completion.readonly = true;
+        // Allow updates only if the 'trainer' field is modified
+        if (current.trainer != previous.trainer) {
+            return; // Allow the update
+        }
+
+        // Abort the action if other fields are modified
+        gs.addErrorMessage('You are only allowed to update the Trainer field.');
+        current.setAbortAction(true);
     }
-    return true;
-})(current, operation, gs.getUserID().toString());
+})(current, previous);
 ]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -44,7 +46,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c54bccd483d692109e12ef80ceaad396</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Trainer Can't Modify</sys_name>
         <sys_overrides/>
         <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
@@ -52,7 +54,7 @@
         <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
         <sys_update_name>sys_script_c54bccd483d692109e12ef80ceaad396</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-01 16:28:18</sys_updated_on>
+        <sys_updated_on>2024-12-01 21:28:32</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
