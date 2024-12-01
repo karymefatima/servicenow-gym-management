@@ -2,19 +2,19 @@
     <sys_scope_privilege action="INSERT_OR_UPDATE">
         <operation>create</operation>
         <source_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</source_scope>
-        <status>requested</status>
+        <status>allowed</status>
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-12-01 12:27:44</sys_created_on>
         <sys_id>5cd3df4083d292109e12ef80ceaad346</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>sys_notification</sys_name>
         <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
         <sys_policy/>
         <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
         <sys_update_name>sys_scope_privilege_5cd3df4083d292109e12ef80ceaad346</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-01 12:27:44</sys_updated_on>
+        <sys_updated_on>2024-12-01 12:42:15</sys_updated_on>
         <target_name>sys_notification</target_name>
         <target_scope display_value="Global">global</target_scope>
         <target_type>sys_db_object</target_type>
