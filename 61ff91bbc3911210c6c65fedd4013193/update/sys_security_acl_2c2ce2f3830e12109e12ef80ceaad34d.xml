@@ -8,18 +8,20 @@
         <local_or_existing>Local</local_or_existing>
         <name>x_1521034_gym_mana_workout_plans.short_description</name>
         <operation display_value="write">write</operation>
-        <script><![CDATA[(function executeRule(current, operation) {
-    // Allow write access if the user has the manager role
+        <script><![CDATA[(function executeSecurity(record, operation) {
+    // Check if the user is a trainer but NOT a manager
+    if (gs.hasRole('x_1521034_gym_mana.trainer') && !gs.hasRole('x_1521034_gym_mana.manager')) {
+        // Deny access to this field for trainers
+        return false;
+    }
+
+    // Managers can edit all fields
     if (gs.hasRole('x_1521034_gym_mana.manager')) {
         return true;
     }
-    
-    // Deny write access for trainers who are not managers
-    if (gs.hasRole('x_1521034_gym_mana.trainer')) {
-        return false; // Block edit access for trainers
-    }
 
-    return false; // Block access for other roles
+    // Deny access for all other roles
+    return false;
 })(current, operation);
 ]]></script>
         <security_attribute/>
@@ -27,14 +29,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-11-30 15:07:20</sys_created_on>
         <sys_id>2c2ce2f3830e12109e12ef80ceaad34d</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>x_1521034_gym_mana_workout_plans.short_description</sys_name>
         <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
         <sys_update_name>sys_security_acl_2c2ce2f3830e12109e12ef80ceaad34d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-01 21:44:51</sys_updated_on>
+        <sys_updated_on>2024-12-01 22:12:51</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>
