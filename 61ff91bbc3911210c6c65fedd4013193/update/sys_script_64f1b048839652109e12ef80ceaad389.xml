@@ -27,33 +27,25 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[(function executeSecurity(record, operation, role) {
+    // If the user is a trainer but not a manager
+    if (gs.hasRole('x_1521034_gym_mana.trainer') && !gs.hasRole('x_1521034_gym_mana.manager')) {
+        // Allow only the 'trainer' field to be editable
+        record.short_description.readonly = true;
+        record.workouts.readonly = true;
+        record.estimated_completion.readonly = true;
 
-    if (gs.hasRole('trainer')) {
-        // Allow changes only to the Trainer field
-        if (current.trainer != previous.trainer) {
-            // Allow the update if only the Trainer field is modified
-            return;
-        }
-
-        // Check for changes in fields other than the Trainer field
-        var changedFields = [];
-        var fieldNames = ['short_description', 'workouts', 'estimated_completion']; // List all other fields in the table
-        for (var i = 0; i < fieldNames.length; i++) {
-            var fieldName = fieldNames[i];
-            if (current[fieldName] != previous[fieldName]) {
-                changedFields.push(fieldName);
-            }
-        }
-
-        // If any other field is changed, prevent the update
-        if (changedFields.length > 0) {
-            gs.addErrorMessage('You are only allowed to update the Trainer field. Changes to other fields are not permitted.');
-            current.setAbortAction(true); // Abort the save operation
-        }
+        // Ensure the trainer field is writable
+        record.trainer.readonly = false;
+    } else if (gs.hasRole('x_1521034_gym_mana.manager')) {
+        // Managers can edit all fields, no restrictions
+        record.short_description.readonly = false;
+        record.workouts.readonly = false;
+        record.estimated_completion.readonly = false;
+        record.trainer.readonly = false;
     }
-
-})(current, previous);
+    return true;
+})(current, operation, gs.getUserID().toString());
 ]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -61,15 +53,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>64f1b048839652109e12ef80ceaad389</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Trainer Cannot Modify</sys_name>
         <sys_overrides/>
         <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
         <sys_policy/>
         <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
         <sys_update_name>sys_script_64f1b048839652109e12ef80ceaad389</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-01 00:44:24</sys_updated_on>
+        <sys_updated_by>geonzon.manager</sys_updated_by>
+        <sys_updated_on>2024-12-01 17:20:05</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
