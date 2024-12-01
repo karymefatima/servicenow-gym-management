@@ -28,12 +28,21 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeSecurity(record, operation, role) {
-    // Check if the user has the trainer role but not the manager role
+    // If the user is a trainer but not a manager
     if (gs.hasRole('x_1521034_gym_mana.trainer') && !gs.hasRole('x_1521034_gym_mana.manager')) {
-        // Set specific fields as read-only for trainers
-        record.workouts.readonly = true;
+        // Allow only the 'trainer' field to be editable
         record.short_description.readonly = true;
+        record.workouts.readonly = true;
         record.estimated_completion.readonly = true;
+
+        // Ensure the trainer field is writable
+        record.trainer.readonly = false;
+    } else if (gs.hasRole('x_1521034_gym_mana.manager')) {
+        // Managers can edit all fields, no restrictions
+        record.short_description.readonly = false;
+        record.workouts.readonly = false;
+        record.estimated_completion.readonly = false;
+        record.trainer.readonly = false;
     }
     return true;
 })(current, operation, gs.getUserID().toString());
@@ -44,7 +53,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c54bccd483d692109e12ef80ceaad396</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Trainer Can't Modify</sys_name>
         <sys_overrides/>
         <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
@@ -52,7 +61,7 @@
         <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
         <sys_update_name>sys_script_c54bccd483d692109e12ef80ceaad396</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-01 16:28:18</sys_updated_on>
+        <sys_updated_on>2024-12-01 18:25:54</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

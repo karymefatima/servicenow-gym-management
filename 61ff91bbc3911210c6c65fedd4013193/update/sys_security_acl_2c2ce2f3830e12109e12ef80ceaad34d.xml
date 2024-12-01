@@ -4,19 +4,27 @@
         <admin_overrides>false</admin_overrides>
         <advanced>true</advanced>
         <condition/>
-        <description>Allow write for records in x_1521034_gym_mana_workout_plans, for users with role x_1521034_gym_mana.manager, and if the ACL script returns true.</description>
+        <description>Allow write for all fields in x_1521034_gym_mana_workout_plans, for users with roles (x_1521034_gym_mana.manager, x_1521034_gym_mana.trainer), and if the ACL script returns true.</description>
         <local_or_existing>Local</local_or_existing>
-        <name>x_1521034_gym_mana_workout_plans</name>
+        <name>x_1521034_gym_mana_workout_plans.*</name>
         <operation display_value="write">write</operation>
         <script><![CDATA[(function executeSecurity(record, operation, role) {
-    // Check if the user has the trainer role but not the manager role
+    // If the user is a trainer but not a manager
     if (gs.hasRole('x_1521034_gym_mana.trainer') && !gs.hasRole('x_1521034_gym_mana.manager')) {
-        // Restrict modifications to only the 'trainer' field
+        // Allow only the 'trainer' field to be editable
         record.short_description.readonly = true;
         record.workouts.readonly = true;
         record.estimated_completion.readonly = true;
+
+        // Ensure the trainer field is writable
+        record.trainer.readonly = false;
+    } else if (gs.hasRole('x_1521034_gym_mana.manager')) {
+        // Managers can edit all fields, no restrictions
+        record.short_description.readonly = false;
+        record.workouts.readonly = false;
+        record.estimated_completion.readonly = false;
+        record.trainer.readonly = false;
     }
-    // Managers can edit all fields (no restrictions applied)
     return true;
 })(current, operation, gs.getUserID().toString());
 ]]></script>
@@ -25,14 +33,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-11-30 15:07:20</sys_created_on>
         <sys_id>2c2ce2f3830e12109e12ef80ceaad34d</sys_id>
-        <sys_mod_count>13</sys_mod_count>
-        <sys_name>x_1521034_gym_mana_workout_plans</sys_name>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>x_1521034_gym_mana_workout_plans.*</sys_name>
         <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
         <sys_update_name>sys_security_acl_2c2ce2f3830e12109e12ef80ceaad34d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-01 16:41:03</sys_updated_on>
+        <sys_updated_on>2024-12-01 18:25:30</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>
