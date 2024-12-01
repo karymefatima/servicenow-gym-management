@@ -8,39 +8,30 @@
         <local_or_existing>Local</local_or_existing>
         <name>x_1521034_gym_mana_workout_plans.*</name>
         <operation display_value="write">write</operation>
-        <script><![CDATA[(function executeSecurity(record, operation, role) {
-    // If the user is a trainer but not a manager
+        <script><![CDATA[(function executeAccessControl(record, operation) {
     if (gs.hasRole('x_1521034_gym_mana.trainer') && !gs.hasRole('x_1521034_gym_mana.manager')) {
-        // Allow only the 'trainer' field to be editable
-        record.short_description.readonly = true;
-        record.workouts.readonly = true;
-        record.estimated_completion.readonly = true;
-
-        // Ensure the trainer field is writable
-        record.trainer.readonly = false;
-    } else if (gs.hasRole('x_1521034_gym_mana.manager')) {
-        // Managers can edit all fields, no restrictions
-        record.short_description.readonly = false;
-        record.workouts.readonly = false;
-        record.estimated_completion.readonly = false;
-        record.trainer.readonly = false;
+        // Deny write access to all fields except 'trainer'
+        record.short_description.write = false;
+        record.workouts.write = false;
+        record.estimated_completion.write = false;
+        record.trainer.write = true;
     }
     return true;
-})(current, operation, gs.getUserID().toString());
+})(current, operation);
 ]]></script>
         <security_attribute/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-11-30 15:07:20</sys_created_on>
         <sys_id>2c2ce2f3830e12109e12ef80ceaad34d</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>x_1521034_gym_mana_workout_plans.*</sys_name>
         <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
         <sys_update_name>sys_security_acl_2c2ce2f3830e12109e12ef80ceaad34d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-01 18:25:30</sys_updated_on>
+        <sys_updated_on>2024-12-01 18:50:30</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>
