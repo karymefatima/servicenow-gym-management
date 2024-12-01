@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="DELETE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description/>
+        <event_name>x_1521034_gym_mana.custom.workout_plan_a</event_name>
+        <fired_by/>
+        <priority>100</priority>
+        <queue/>
+        <suffix>custom.workout_plan_assigned</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-30 14:25:36</sys_created_on>
+        <sys_id>68c4e67f83ca12109e12ef80ceaad35a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1521034_gym_mana.custom.workout_plan_a</sys_name>
+        <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
+        <sys_update_name>sysevent_register_68c4e67f83ca12109e12ef80ceaad35a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-30 14:25:36</sys_updated_on>
+        <table>x_1521034_gym_mana_workout_plans</table>
+    </sysevent_register>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</application>
+        <file_path/>
+        <instance_id>7496d64d1b8e829039a54089bd4bcb0d</instance_id>
+        <instance_name>dev264192</instance_name>
+        <name>sysevent_register_68c4e67f83ca12109e12ef80ceaad35a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <derived_priority>100</derived_priority>
+        <description/>
+        <event_name>x_1521034_gym_mana.custom.workout_plan_a</event_name>
+        <fired_by/>
+        <priority>100</priority>
+        <queue/>
+        <suffix>custom.workout_plan_assigned</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-30 14:25:36</sys_created_on>
+        <sys_id>68c4e67f83ca12109e12ef80ceaad35a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1521034_gym_mana.custom.workout_plan_a</sys_name>
+        <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
+        <sys_update_name>sysevent_register_68c4e67f83ca12109e12ef80ceaad35a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-30 14:25:36</sys_updated_on>
+        <table>x_1521034_gym_mana_workout_plans</table>
+    </sysevent_register>
+</record_update>]]></payload>
+        <payload_hash>647883344</payload_hash>
+        <record_name>x_1521034_gym_mana.custom.workout_plan_a</record_name>
+        <reverted_from/>
+        <source>3205f44c839652109e12ef80ceaad387</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-01 00:51:54</sys_created_on>
+        <sys_id>9305f44c839652109e12ef80ceaad3f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1937fb3decd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-01 00:51:54</sys_updated_on>
+        <type>Event Registration</type>
+        <update_guid>5f05f44c6796521039330602c41d65f2</update_guid>
+        <update_guid_history>5f05f44c6796521039330602c41d65f2:0,e8f33cc8ce9652102f3f7865ede39f53:1941423044,49b5667f8fca12107e6b1d625fec5b3e:-1899885512</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-01 01:04:09</sys_created_on>
+        <sys_db_object display_value="" name="sysevent_register">sysevent_register</sys_db_object>
+        <sys_id>7e4d3ded11b94d508733ddb9104f9640</sys_id>
+        <sys_metadata>68c4e67f83ca12109e12ef80ceaad35a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1521034_gym_mana.custom.workout_plan_a</sys_name>
+        <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
+        <sys_parent display_value="Workout Plans">5bdf69b7831112106a3bc7b6feaad3f0</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
+        <sys_scope_delete display_value="">862e8ebd8a6741908a8614714c804240</sys_scope_delete>
+        <sys_update_name>sysevent_register_68c4e67f83ca12109e12ef80ceaad35a</sys_update_name>
+        <sys_update_version display_value="sysevent_register_68c4e67f83ca12109e12ef80ceaad35a">9305f44c839652109e12ef80ceaad3f3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-01 01:04:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
