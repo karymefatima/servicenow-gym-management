@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Workout Plans">7911fd37835112106a3bc7b6feaad3b4</application>
+        <assessment/>
+        <device_type/>
+        <filter table="x_1521034_gym_mana_workout_plans">trainer=javascript:gs.getUserID()^EQ<item endquery="false" field="trainer" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserID()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Notification for Trainers</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1521034_gym_mana_workout_plans</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_1521034_gym_mana.trainer,x_1521034_gym_mana.manager</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 04:40:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>30a3975383c2d2109e12ef80ceaad39a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Notification for Trainers</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
+        <sys_update_name>sys_app_module_30a3975383c2d2109e12ef80ceaad39a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 04:40:07</sys_updated_on>
+        <timeline_page/>
+        <title>Notification for Trainers</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</application>
+        <file_path/>
+        <instance_id>7496d64d1b8e829039a54089bd4bcb0d</instance_id>
+        <instance_name>dev264192</instance_name>
+        <name>sys_app_module_30a3975383c2d2109e12ef80ceaad39a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Workout Plans">7911fd37835112106a3bc7b6feaad3b4</application>
+        <assessment/>
+        <device_type/>
+        <filter table="x_1521034_gym_mana_workout_plans">trainer=javascript:gs.getUserID()^EQ<item endquery="false" field="trainer" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserID()"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Notification for Trainers</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1521034_gym_mana_workout_plans</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_1521034_gym_mana.trainer,x_1521034_gym_mana.manager</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-29 04:40:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>30a3975383c2d2109e12ef80ceaad39a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Notification for Trainers</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
+        <sys_update_name>sys_app_module_30a3975383c2d2109e12ef80ceaad39a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-29 04:40:07</sys_updated_on>
+        <timeline_page/>
+        <title>Notification for Trainers</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>]]></payload>
+        <payload_hash>-1636060200</payload_hash>
+        <record_name>Notification for Trainers</record_name>
+        <reverted_from/>
+        <source/>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-30 14:10:44</sys_created_on>
+        <sys_id>df42e2bb83ca12109e12ef80ceaad3ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1937d68dc890000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-30 14:10:44</sys_updated_on>
+        <type>Module</type>
+        <update_guid>9f42e2bbc5ca12101eda16d4857840ec</update_guid>
+        <update_guid_history>1f8fc633338a12108248af8ad8c77e81:1519409591,3aa49cfb110212109604702b8ea08557:0,0352d83b2802121096600b7173d22588:-612098500,ba169753b9c2d21071f3306b2c6282f3:-843330000</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Notification for Trainers">875226b783ca12109e12ef80ceaad327</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-11-30 14:11:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>4444e5530d9946af928f6e418f3cff89</sys_id>
+        <sys_metadata>30a3975383c2d2109e12ef80ceaad39a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Notification for Trainers</sys_name>
+        <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
+        <sys_scope_delete display_value="">862e8ebd8a6741908a8614714c804240</sys_scope_delete>
+        <sys_update_name>sys_app_module_30a3975383c2d2109e12ef80ceaad39a</sys_update_name>
+        <sys_update_version display_value="sys_app_module_30a3975383c2d2109e12ef80ceaad39a">df42e2bb83ca12109e12ef80ceaad3ec</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-11-30 14:11:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

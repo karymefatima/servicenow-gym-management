@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
     <sysevent_email_action action="INSERT_OR_UPDATE">
         <action_insert>true</action_insert>
-        <action_update>false</action_update>
+        <action_update>true</action_update>
         <active>true</active>
         <advanced_condition/>
         <affected_field_on_event/>
-        <category display_value="Assessment" name="Assessment">a69d02137f232200ee2e108c3ffa9124</category>
+        <category display_value="Uncategorized" name="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
         <collection>x_1521034_gym_mana_workout_plans</collection>
-        <condition/>
+        <condition table="x_1521034_gym_mana_workout_plans">trainerISNOTEMPTY^EQ<item endquery="false" field="trainer" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
         <content_type>text/html</content_type>
         <default_interval/>
         <description/>
@@ -36,38 +38,39 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p><span style="font-size: 12pt;"><strong>NEW WORKOUT ADDED</strong></span></p>
-<p>A new <a href="https://dev205797.service-now.com/now/nav/ui/classic/params/target/x_1521034_gym_mana_workout_plans_list.do%3Fsysparm_userpref_module%3D7511fd37835112106a3bc7b6feaad3c4"><strong>Workout Plan</strong></a> has been added! Check it out.</p>]]></message_html>
+        <message_html><![CDATA[<p><span style="font-size: 12pt;"><strong>Hello </strong>${trainer.name},</span></p>
+<p><span style="font-size: 12pt;">A new workout plan has been assigned to you:</span><br /><span style="font-size: 12pt;">- Plan Number: ${number}</span><br /><span style="font-size: 12pt;">- Short Description: ${short_description}</span><br /><span style="font-size: 12pt;">- Estimated Completion: ${estimated_completion}</span></p>
+<p><span style="font-size: 12pt;">Regards, &nbsp;</span><br /><span style="font-size: 12pt;">Gym Management Team</span></p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>New WP Notif</name>
+        <name>Trainer Workout Assignment</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
         <recipient_fields>trainer</recipient_fields>
         <recipient_groups/>
-        <recipient_users>6816f79cc0a8016401c5a33be04be441</recipient_users>
+        <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>Workout Plan</subject>
+        <subject>New Workout Plan Assigned</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-11-18 02:47:25</sys_created_on>
+        <sys_created_on>2024-12-01 00:57:39</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>3a811ab7833112106a3bc7b6feaad3e5</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>New WP Notif</sys_name>
+        <sys_id>dba5708c839652109e12ef80ceaad35f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Trainer Workout Assignment</sys_name>
         <sys_overrides/>
         <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
         <sys_policy/>
         <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
-        <sys_update_name>sysevent_email_action_3a811ab7833112106a3bc7b6feaad3e5</sys_update_name>
+        <sys_update_name>sysevent_email_action_dba5708c839652109e12ef80ceaad35f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-11-30 03:54:58</sys_updated_on>
+        <sys_updated_on>2024-12-01 00:57:39</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
