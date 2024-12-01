@@ -18,7 +18,7 @@
         <filter_condition/>
         <is_rest>false</is_rest>
         <message/>
-        <name>Trainer Cannot Modify</name>
+        <name>Trainer Can't Modify</name>
         <order>100</order>
         <priority>100</priority>
         <rest_method/>
@@ -27,51 +27,34 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-
-    if (gs.hasRole('trainer')) {
-        // Allow changes only to the Trainer field
-        if (current.trainer != previous.trainer) {
-            // Allow the update if only the Trainer field is modified
-            return;
-        }
-
-        // Check for changes in fields other than the Trainer field
-        var changedFields = [];
-        var fieldNames = ['short_description', 'workouts', 'estimated_completion']; // List all other fields in the table
-        for (var i = 0; i < fieldNames.length; i++) {
-            var fieldName = fieldNames[i];
-            if (current[fieldName] != previous[fieldName]) {
-                changedFields.push(fieldName);
-            }
-        }
-
-        // If any other field is changed, prevent the update
-        if (changedFields.length > 0) {
-            gs.addErrorMessage('You are only allowed to update the Trainer field. Changes to other fields are not permitted.');
-            current.setAbortAction(true); // Abort the save operation
-        }
+        <script><![CDATA[(function executeSecurity(record, operation, role) {
+    // Check if the user has the trainer role but not the manager role
+    if (gs.hasRole('x_1521034_gym_mana.trainer') && !gs.hasRole('x_1521034_gym_mana.manager')) {
+        // Set specific fields as read-only for trainers
+        record.workouts.readonly = true;
+        record.short_description.readonly = true;
+        record.estimated_completion.readonly = true;
     }
-
-})(current, previous);
+    return true;
+})(current, operation, gs.getUserID().toString());
 ]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-12-01 00:44:24</sys_created_on>
+        <sys_created_on>2024-12-01 16:28:18</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>64f1b048839652109e12ef80ceaad389</sys_id>
+        <sys_id>c54bccd483d692109e12ef80ceaad396</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Trainer Cannot Modify</sys_name>
+        <sys_name>Trainer Can't Modify</sys_name>
         <sys_overrides/>
         <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
         <sys_policy/>
         <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
-        <sys_update_name>sys_script_64f1b048839652109e12ef80ceaad389</sys_update_name>
+        <sys_update_name>sys_script_c54bccd483d692109e12ef80ceaad396</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-01 00:44:24</sys_updated_on>
+        <sys_updated_on>2024-12-01 16:28:18</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=64f1b048839652109e12ef80ceaad389"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=c54bccd483d692109e12ef80ceaad396"/>
 </record_update>

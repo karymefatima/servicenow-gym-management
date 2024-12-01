@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1521034_gym_mana_workout_plans</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Trainer Cannot Modify</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[
+(function executeSecurity(record, operation, role) {
+    // Check if the user has the trainer role but not the manager role
+    if (gs.hasRole('x_1521034_gym_mana.trainer') && !gs.hasRole('x_1521034_gym_mana.manager')) {
+        // Restrict modifications to only the 'trainer' field
+        record.short_description.readonly = true;
+        record.workouts.readonly = true;
+        record.estimated_completion.readonly = true;
+    }
+    // Managers can edit all fields (no restrictions applied)
+    return true;
+})(current, operation, gs.getUserID().toString());
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-01 00:44:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>64f1b048839652109e12ef80ceaad389</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Trainer Cannot Modify</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
+        <sys_update_name>sys_script_64f1b048839652109e12ef80ceaad389</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-01 16:12:26</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=64f1b048839652109e12ef80ceaad389"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</application>
+        <file_path/>
+        <instance_id>7496d64d1b8e829039a54089bd4bcb0d</instance_id>
+        <instance_name>dev264192</instance_name>
+        <name>sys_script_64f1b048839652109e12ef80ceaad389</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;true&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1521034_gym_mana_workout_plans&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Trainer Cannot Modify&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[
+(function executeSecurity(record, operation, role) {
+    // Check if the user has the trainer role but not the manager role
+    if (gs.hasRole('x_1521034_gym_mana.trainer') &amp;&amp; !gs.hasRole('x_1521034_gym_mana.manager')) {
+        // Restrict modifications to only the 'trainer' field
+        record.short_description.readonly = true;
+        record.workouts.readonly = true;
+        record.estimated_completion.readonly = true;
+    }
+    // Managers can edit all fields (no restrictions applied)
+    return true;
+})(current, operation, gs.getUserID().toString());
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-01 00:44:24&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;64f1b048839652109e12ef80ceaad389&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Trainer Cannot Modify&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Gym Management" source="x_1521034_gym_mana"&gt;61ff91bbc3911210c6c65fedd4013193&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Gym Management"&gt;61ff91bbc3911210c6c65fedd4013193&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_64f1b048839652109e12ef80ceaad389&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-01 16:12:26&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=64f1b048839652109e12ef80ceaad389"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>325479182</payload_hash>
+        <record_name>Trainer Cannot Modify</record_name>
+        <reverted_from/>
+        <source>af96ba4b838a52109e12ef80ceaad31b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-01 16:12:26</sys_created_on>
+        <sys_id>e7b740d083d692109e12ef80ceaad3e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19382fea2d20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-01 16:12:26</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>ebb740d04dd692109ff8ac1d575486df</update_guid>
+        <update_guid_history>ebb740d04dd692109ff8ac1d575486df:325479182,16e6c850e5d69210ee2f9e1a9390b8fc:-1629107808,ef45801030d69210da290d30dc33e731:1908213019,4b350010f7d69210e853e013fdc312f1:-36612658,94c4c4dcc0969210f2976c3fb7288537:1908213019,a8f33cc8f69652100028ae322bf13541:-2135257135,2953fc882f9652106c7b12c301872d12:-1473371555</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-01 16:22:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>3b46fbb3854345e491225620207f1029</sys_id>
+        <sys_metadata>64f1b048839652109e12ef80ceaad389</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Trainer Cannot Modify</sys_name>
+        <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
+        <sys_parent display_value="Workout Plans">5bdf69b7831112106a3bc7b6feaad3f0</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
+        <sys_scope_delete display_value="">862e8ebd8a6741908a8614714c804240</sys_scope_delete>
+        <sys_update_name>sys_script_64f1b048839652109e12ef80ceaad389</sys_update_name>
+        <sys_update_version display_value="sys_script_64f1b048839652109e12ef80ceaad389">e7b740d083d692109e12ef80ceaad3e0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-01 16:22:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
