@@ -38,8 +38,8 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p><span style="font-size: 12pt;"><strong>Hello </strong>${trainer.name},</span></p>
-<p><span style="font-size: 12pt;">A new workout plan has been assigned to you:</span><br /><span style="font-size: 12pt;">- Plan Number: ${number}</span><br /><span style="font-size: 12pt;">- Short Description: ${short_description}</span><br /><span style="font-size: 12pt;">- Estimated Completion: ${estimated_completion}</span></p>
+        <message_html><![CDATA[<p><span style="font-size: 12pt;"><strong>Hello TRAINER</strong>,</span></p>
+<p><span style="font-size: 12pt;">A new workout plan has been assigned to you!</span><br /><br /></p>
 <p><span style="font-size: 12pt;">Regards, &nbsp;</span><br /><span style="font-size: 12pt;">Gym Management Team</span></p>]]></message_html>
         <message_list/>
         <message_text/>
@@ -47,7 +47,7 @@
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields>trainer</recipient_fields>
+        <recipient_fields>trainer,trainer.user_name</recipient_fields>
         <recipient_groups/>
         <recipient_users/>
         <reply_to/>
@@ -62,7 +62,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dba5708c839652109e12ef80ceaad35f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Trainer Workout Assignment</sys_name>
         <sys_overrides/>
         <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
@@ -70,9 +70,7 @@
         <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
         <sys_update_name>sysevent_email_action_dba5708c839652109e12ef80ceaad35f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-
-        <sys_updated_on>2024-12-01 13:30:54</sys_updated_on>
-
+        <sys_updated_on>2024-12-01 17:56:33</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
