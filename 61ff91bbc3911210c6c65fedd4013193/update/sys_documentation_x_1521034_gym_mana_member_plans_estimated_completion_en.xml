@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="member" label="Member" language="en" table="x_1521034_gym_mana_member_workout_plan">
+    <sys_documentation element="estimated_completion" label="Estimated Completion" language="en" table="x_1521034_gym_mana_member_plans">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>member</element>
+            <element>estimated_completion</element>
             <help/>
             <hint/>
-            <label>Member</label>
+            <label>Estimated Completion</label>
             <language>en</language>
-            <name>x_1521034_gym_mana_member_workout_plan</name>
-            <plural>Members</plural>
+            <name>x_1521034_gym_mana_member_plans</name>
+            <plural>Estimated Completions</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2024-12-01 22:04:26</sys_created_on>
+            <sys_created_on>2024-12-01 22:13:23</sys_created_on>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>Member</sys_name>
+            <sys_name>Estimated Completion</sys_name>
             <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
             <sys_policy/>
             <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
-            <sys_update_name>sys_documentation_x_1521034_gym_mana_member_workout_plan_member_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_1521034_gym_mana_member_plans_estimated_completion_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2024-12-01 22:04:26</sys_updated_on>
+            <sys_updated_on>2024-12-01 22:13:23</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

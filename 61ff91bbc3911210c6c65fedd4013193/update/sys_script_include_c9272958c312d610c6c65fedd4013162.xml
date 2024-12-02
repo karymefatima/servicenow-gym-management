@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1521034_gym_mana.gym_mana_member_workout_plan.trainer</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>gym_mana_member_workout_plan.trainer</name>
+        <script><![CDATA[var gym_mana_member_workout_plan_trainer = Class.create();
+gym_mana_member_workout_plan_trainer.prototype = {
+    initialize: function() {
+    },
+
+    // This method will check the operation (e.g., create) and validate the user's role
+    canPerformOperation: function(operation) {
+        // Check if the operation is 'create'
+        if (operation === 'create') {
+            // Allow if the user has the role of either 'trainer' or 'manager'
+            if (gs.hasRole('x_1521034_gym_mana.trainer') || gs.hasRole('x_1521034_gym_mana.manager')) {
+                return true; // Allow the create operation
+            }
+        }
+        
+        // Deny other operations or if the roles do not match
+        return false;
+    },
+
+    type: 'gym_mana_member_workout_plan_trainer'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-01 23:12:26</sys_created_on>
+        <sys_id>c9272958c312d610c6c65fedd4013162</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>gym_mana_member_workout_plan.trainer</sys_name>
+        <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
+        <sys_update_name>sys_script_include_c9272958c312d610c6c65fedd4013162</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-01 23:12:26</sys_updated_on>
+    </sys_script_include>
+</record_update>

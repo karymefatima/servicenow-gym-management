@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="db867904c3921210c53971edd4013183" label="Member_Workout_Plan" max_length="40" name="x_1521034_gym_mana_member_workout_plan" type="collection">
-        <element default="javascript:getNextObjNumber();" display="true" dynamic_default_value="8acb83a85f220100a9ad2572f2b47741" label="Number" max_length="40" name="number" type="string" use_dynamic_default="true"/>
         <element default="Push Ups" label="Workouts" max_length="4000" name="workouts" type="glide_list"/>
+        <element default="javascript:getNextObjNumber();" display="true" dynamic_default_value="8acb83a85f220100a9ad2572f2b47741" label="Number" max_length="40" name="number" type="string" use_dynamic_default="true"/>
         <element label="Short Description" max_length="40" name="short_description" type="string"/>
         <element label="Estimate Completion" max_length="40" name="estimate_completion" type="glide_time"/>
-        <element label="Trainer" max_length="32" name="trainer" reference="x_1521034_gym_mana_workout" type="reference"/>
-        <element label="Member" max_length="32" name="member" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Member" max_length="32" name="member" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Trainer" max_length="32" name="trainer" reference="sys_user" type="reference"/>
         <index name="index">
             <element name="member"/>
         </index>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="83295914c3de9610c6c65fedd40131a4" label="Member Plans" max_length="40" name="x_1521034_gym_mana_member_plans" type="collection">
+        <element label="Number" max_length="40" name="number" type="string"/>
+        <element label="Short Description" max_length="40" name="short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Trainer" max_length="32" name="trainer" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Member" max_length="32" name="member" reference="sys_user" type="reference"/>
+        <element label="Estimated Completion" max_length="400" name="estimated_completion" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,no_sort=true,slushbucket_ref_no_expand=true" label="Workouts" max_length="4000" name="workouts" reference="x_1521034_gym_mana_workout" type="glide_list"/>
+        <index name="index">
+            <element name="member"/>
+        </index>
+        <index name="index2">
+            <element name="trainer"/>
+        </index>
+    </element>
+</database>

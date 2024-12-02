@@ -4,15 +4,15 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-12-01 05:47:57</sys_created_on>
         <sys_id>c4d8b1c8c3921210c53971edd40131f5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_1521034_gym_mana_member_workout_plan.x_1521034_gym_mana.member_workout_plan_user</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_1521034_gym_mana_member_workout_plan.x_1521034_gym_mana.trainer</sys_name>
         <sys_package display_value="Gym Management" source="x_1521034_gym_mana">61ff91bbc3911210c6c65fedd4013193</sys_package>
         <sys_policy/>
         <sys_scope display_value="Gym Management">61ff91bbc3911210c6c65fedd4013193</sys_scope>
         <sys_security_acl display_value="x_1521034_gym_mana_member_workout_plan">88d8b1c8c3921210c53971edd40131f1</sys_security_acl>
         <sys_update_name>sys_security_acl_role_c4d8b1c8c3921210c53971edd40131f5</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-01 05:47:57</sys_updated_on>
-        <sys_user_role display_value="x_1521034_gym_mana.member_workout_plan_user" name="x_1521034_gym_mana.member_workout_plan_user">efc8f508c3921210c53971edd40131b2</sys_user_role>
+        <sys_updated_on>2024-12-01 23:31:12</sys_updated_on>
+        <sys_user_role display_value="x_1521034_gym_mana.trainer" name="x_1521034_gym_mana.trainer">c91061bbc3911210c6c65fedd401311d</sys_user_role>
     </sys_security_acl_role>
 </record_update>
